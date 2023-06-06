@@ -1,8 +1,8 @@
 from django import forms  
-from video.models import Video
+from video.models import Video1
 class VideoForm(forms.ModelForm):  
     class Meta:  
-        model = Video  
+        model = Video1  
         fields = "__all__" 
         
         # widgets = {'agegroup': forms.TextInput(attrs={'class':'form-control'}),
@@ -14,5 +14,5 @@ class VideoForm(forms.ModelForm):
 class AddForm(forms.ModelForm):
     
     class Meta:
-        model = Video
+        model = Video1
         fields = ('agegroup','subject','topic','video')

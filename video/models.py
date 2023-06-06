@@ -3,12 +3,12 @@ from django.db import models
 # Create your models here.
 
 
-class Video(models.Model):
+class Video1(models.Model):
     # caption=models.CharField(max_length=100)
-    agegroup = models.CharField(max_length=200, default='DEFAULT VALUE')
-    subject = models.CharField(max_length=200, default='DEFAULT VALUE')
-    topic = models.CharField(max_length=200, default='DEFAULT VALUE')
-    video=models.FileField(upload_to="video/%y", default='DEFAULT VALUE')
+    agegroup = models.CharField(max_length=200)
+    subject = models.CharField(max_length=200)
+    topic = models.CharField(max_length=200)
+    video =models.FileField(upload_to="video/%y")
     # def __str__(self):
     #     return self.caption
     

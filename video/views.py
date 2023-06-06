@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from video.models import Video
+from video.models import Video1
 from video.forms import VideoForm, AddForm
 from rest_framework import routers
 # from video.serializers import APItestSerializer
@@ -21,7 +21,7 @@ def index(request):
             reg.save()
     else:
         video = VideoForm()
-    video=Video.objects.all()
+    video=Video1.objects.all()
     return render (request, 'index.html', {"video":video})
 
 
