@@ -11,7 +11,6 @@ from datetime import datetime, timedelta
 # Create your models here.
 
 
-
 class Videoo(models.Model):
     name = models.CharField(max_length=255)
     # video = models.FileField(upload_to='videos/')
